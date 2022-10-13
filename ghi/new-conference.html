@@ -22,15 +22,16 @@
               <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="new-location.html">New location</a>
+                <a class="nav-link d-none" aria-current="page" href="new-location.html">New location</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="new-conference.html">New conference</a>
+                <a class="nav-link active d-none" aria-current="page" href="new-conference.html">New conference</a>
             </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search conferences" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
+            <a class="btn btn-primary" href="attend-conference.html">Attend!</a>
           </form>
         </div>
       </div>
@@ -60,11 +61,11 @@
                 <label for="description">Description</label>
               </div>
               <div class="form-floating mb-3">
-                <input placeholder="Maximum presentations" required type="number" name="max_presentations" id="max_presentations" class="form-control">
+                <input placeholder="Maximum presentations" required type="number" name="max_presentations" id="max_presentations" class="form-control" min="0">
                 <label for="maximum_presentations">Maximum Presentations</label>
               </div>
               <div class="form-floating mb-3">
-                <input placeholder="Maximum attendees" required type="number" name="max_attendees" id="max_attendees" class="form-control">
+                <input placeholder="Maximum attendees" required type="number" name="max_attendees" id="max_attendees" class="form-control" min="0">
                 <label for="maximum_attendees">Maximum attendees</label>
               </div>
               <div class="mb-3">
