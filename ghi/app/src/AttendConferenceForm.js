@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AttendeeSignUpForm extends React.Component {
+class AttendConferenceForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -77,7 +77,7 @@ class AttendeeSignUpForm extends React.Component {
 
   render() {
     return (
-        <div className="my-5">
+      <div className="my-5 container">
       <div className="row">
         <div className="col col-sm-auto">
           <img width="300" className="bg-white rounded shadow d-block mx-auto mb-4" src="/logo.svg" />
@@ -139,4 +139,4 @@ class AttendeeSignUpForm extends React.Component {
   }
 }
 
-export default AttendeeSignUpForm;
+export default AttendConferenceForm;
