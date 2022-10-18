@@ -1,7 +1,8 @@
 version: "3.7"
 services:
   react:
-    image: postgres:14.2-bullseye
+    container_name: react
+    image: node:latest
     command: npm start
     working_dir: /app
     volumes:
@@ -96,7 +97,7 @@ services:
     ports:
       - "3000:80"
   database:
-    image: postgres
+    image: postgres:14.2-bullseye
     volumes:
       - ./database/data:/var/lib/postgresql/data
       - ./database/setup:/docker-entrypoint-initdb.d
